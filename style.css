@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Koulen&family=Permanent+Marker&family=Plus+Jakarta+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #fff0d5;
+    width: 100%;
+    height: 13vh;
+    gap: 10px;
+    border-bottom: 2px solid saddlebrown;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorImg {
+    Width: 15vw;
+    Height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.titulo {
+    width: 30%;
+    font-size: clamp(9px, 3vw, 18px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-style: normal;
+    color:saddlebrown;
+    border-bottom: 2px solid saddlebrown;
+}
+
+.subTitulo {
+    font-family: 'Inconsolata', monospace;
+    font-size: clamp(9px, 2.5vw, 18px);
+    font-style: italic;
+    color:rgb(190, 82, 32);
+    
+}
+
+.header ul {
+    width: 30vw;
+    gap: 20px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header a {
+    color: saddlebrown;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: clamp(9px, 2vw, 18px);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.hero {
+    width: 100%;
+    background-color: #fff6e6;
+    gap: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros_Texto {
+    width: 50%;
+    padding: 20px;
+    gap: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nosotros_Texto h2 {
+    font-size: clamp(18px, 3.5vw, 56px);
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: rgb(121, 58, 13);
+}
+
+.nosotros_Texto p {
+    font-family: 'Inconsolata', monospace;
+    font-size: clamp(12px, 2.5vw, 24px);
+    text-align: center;
+    color: rgba(121, 58, 13, 0.95);
+}
+
+.nosotros_Texto p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.botones {
+    Width: 100%;
+    Height: auto;
+    gap: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    padding: 8px 30px;
+    font-size: clamp(6px, 1vw, 20px);
+    color: rgb(61, 36, 2);
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+
+    border-radius: 20px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.boton1 {
+    background-color: rgb(63, 32, 10);
+    color: #fff0d5;
+}
+
+.boton2 {
+    background-color: bisque;
+}
+
+.nosotros_Img {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comida_Img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 120px;
+    min-height: 80px;
+    border-radius: 20px;
+    border: 2px solid saddlebrown;
+}
+
+.ventajas {
+    width: 100%;
+    gap: 25px;
+    padding: 15px 30px 30px 15px;
+    background-color: rgb(75, 45, 2);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ventajas_titulos {
+    gap: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ventajas_titulos span {
+    text-decoration: underline;
+}
+
+.ventajas_titulos h2 {
+    color:rgb(224, 208, 196);
+    font-size: clamp(18px, 3vw, 42px);
+    font-family: 'Bebas Neue', cursive;
+}
+
+.ventajas_titulos h3 {
+    color:rgb(224, 208, 196, 0.95);
+    font-size: clamp(12px, 2.5vw, 32px);
+    font-family: 'Inconsolata', monospace;
+    font-style: italic;
+}
+
+.contenedor_ventajas {
+    width: 90%;
+    gap: 40px;
+    padding: 20px;
+    text-align: center;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box_ventaja {
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fa-stopwatch {
+    font-size: 48px;
+    color:rgb(224, 208, 196);
+}
+
+.fa-earth-americas {
+    font-size: 48px;
+    color: rgb(224, 208, 196);
+}
+
+.fa-bookmark {
+    font-size: 48px;
+    color: rgb(224, 208, 196);
+}
+
+.contenedor_ventajas h3 {
+    font-size: clamp(18px, 3vw, 36px);
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(224, 208, 196);
+}
+
+.contenedor_ventajas p {
+    font-size: clamp(12px, 2vw, 26px);
+    font-family: 'Inconsolata', monospace;
+    color: rgb(224, 208, 196);
+}
+
+.opciones {
+    width: 100%;
+    gap: 25px;
+    padding: 15px 30px 30px 15px;
+    background-color: #fff6e6;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opciones_titulos {
+    gap: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opciones_titulos span {
+    text-decoration: underline;
+}
+
+.opciones_titulos h2 {
+    color: rgb(121, 58, 13);
+    font-size: clamp(18px, 3vw, 36px);
+    font-family: 'Bebas Neue', cursive;
+}
+
+.opciones_titulos h3 {
+    color: rgb(121, 58, 13, 0.95);
+    font-size: clamp(12px, 2.5vw, 24px);
+    font-family: 'Inconsolata', monospace;
+    font-style: italic;
+}
+
+.contenedor_opciones {
+    width: 90%;
+    gap: 40px;
+    padding: 20px;
+    text-align: center;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenedor_opciones h3 {
+    font-size: clamp(18px, 2.5vw, 32px);
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(75, 45, 2);
+}
+
+.contenedor_opciones p {
+    font-size: clamp(12px, 1.5vw, 20px);
+    font-family: 'Inconsolata', monospace;
+    color: rgb(75, 45, 2, 0.95);
+}
+
+.fa-eye-slash {
+    font-size: 48px;
+    color: rgb(75, 45, 2);
+}
+
+.fa-magnifying-glass {
+    font-size: 48px;
+    color: rgb(75, 45, 2);
+}
+
+.fa-vial {
+    font-size: 48px;
+    color: rgb(75, 45, 2);
+}
+
+.fa-book-skull {
+    font-size: 48px;
+    color: rgb(75, 45, 2);
+}
+
+
+.footer {
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(75, 45, 2);
+    padding: 10px;
+    gap: 30px;
+    color: #fff6e6;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer p {
+    font-family: 'Inconsolata', monospace;
+    font-size: clamp(8px, 2vw, 20px);
+}
+
+.redes {
+    gap: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-facebook {
+    font-size: clamp(16px, 2vw, 32px);
+    color: #fff6e6;
+}
+
+.fa-instagram {
+    font-size: clamp(16px, 2vw, 32px);
+    color: #fff6e6;
+}
+
+.fa-linkedin {
+    font-size: clamp(16px, 2vw, 32px);
+    color: #fff6e6;
+}
+
+@media screen and (max-width: 950px) {
+    .header ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contenedor_ventajas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contenedor_opciones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .titulo {
+        font-size: clamp(6px, 3vw, 12px);
+    }
+
+    .subTitulo {
+        font-size: clamp(6px, 2.5vw, 12px);
+    }
+
+    .header a {
+        font-size: clamp(6px, 2vw, 12px);
+        gap: 5px;
+    }
+
+    .footer p {
+        font-size: clamp(8px, 1vw, 20px);
+    }
+
+}
+
+@media screen and (max-height: 400px) {
+    .titulo {
+        font-size: clamp(6px, 3vw, 12px);
+    }
+
+    .subTitulo {
+        font-size: clamp(6px, 2.5vw, 12px);
+    }
+
+    .header a {
+        font-size: clamp(6px, 2vw, 12px);
+        gap: 5px;
+    }
+
+    .footer p {
+        font-size: clamp(6px, 1vw, 20px);
+    }
+
+}
