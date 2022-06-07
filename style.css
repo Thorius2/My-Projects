@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Koulen&family=Permanent+Marker&family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Koulen&family=Permanent+Marker&family=Plus+Jakarta+Sans&family=Poppins:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -13,6 +13,8 @@ ul {
 a {
     text-decoration: none;
 }
+
+/* Sección Header */
 
 .header {
     background-color: #fff0d5;
@@ -78,11 +80,21 @@ h1 {
     align-items: center;
 }
 
-.header a {
+.toggle a {
     color: saddlebrown;
     text-decoration: underline;
     cursor: pointer;
-    font-size: clamp(9px, 2vw, 18px);
+    font-size: clamp(9px, 1.2vw, 16px);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-button {
+    display: none;
+}
+
+.menu-hamburguesa {
+    display: none;
 }
 
 .main {
@@ -92,6 +104,7 @@ h1 {
     flex-direction: column
 }
 
+/* Sección Hero */
 .hero {
     width: 100%;
     background-color: #fff6e6;
@@ -184,10 +197,11 @@ h1 {
     border: 2px solid saddlebrown;
 }
 
+/* Sección Ventajas */
 .ventajas {
     width: 100%;
     gap: 25px;
-    padding: 15px 30px 30px 15px;
+    padding: 45px 30px 30px 15px;
     background-color: rgb(75, 45, 2);
     text-align: center;
 
@@ -270,10 +284,11 @@ h1 {
     color: rgb(224, 208, 196);
 }
 
+/* Sección Opciones */
 .opciones {
     width: 100%;
     gap: 25px;
-    padding: 15px 30px 30px 15px;
+    padding: 45px 30px 30px 15px;
     background-color: #fff6e6;
     text-align: center;
 
@@ -328,7 +343,7 @@ h1 {
 }
 
 .contenedor_opciones p {
-    font-size: clamp(12px, 1.5vw, 20px);
+    font-size: clamp(16px, 1.5vw, 20px);
     font-family: 'Inconsolata', monospace;
     color: rgb(75, 45, 2, 0.95);
 }
@@ -353,15 +368,90 @@ h1 {
     color: rgb(75, 45, 2);
 }
 
+/* Sección Clientes */
+.contenedor_clientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+    gap: 30px;
+}
+
+.card_clientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    background-color: beige;
+    border-radius: 20px;
+}
+
+.card_image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid saddlebrown;
+}
+
+.card_logo {
+    width: 80%;
+}
+
+.card_text {
+    width: 60%;
+    text-align: center;
+}
+
+.card_title {
+    color:rgb(63, 32, 10);
+    font-weight: bold;
+    font-size: clamp(10px, 2.5vw, 30px);
+    text-decoration: underline;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.card_desc {
+    display: none;
+}
+
+/* .card_image:hover ~ .card_text {
+    background-color: brown;
+} */
+
+.card_title:hover + .card_desc {
+    display: block;
+    padding: 10px;
+    color: rgb(66, 30, 4);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sección Contacto */
+.titulo_contacto {
+    color: rgb(121, 58, 13);
+    font-size: clamp(18px, 3vw, 36px);
+    font-family: 'Bebas Neue', cursive;
+}
+
+.datos_contacto {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: clamp(16px, 1.5vw, 20px);
+}
+
+/* Sección Footer */
 
 .footer {
-    height: 15vh;
     width: 100%;
     background-color: rgb(75, 45, 2);
-    padding: 10px;
+    padding: 30px;
     gap: 30px;
     color: #fff6e6;
 
+    text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -374,7 +464,6 @@ h1 {
 
 .redes {
     gap: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,10 +484,47 @@ h1 {
     color: #fff6e6;
 }
 
-@media screen and (max-width: 950px) {
+/* Sección Medias */
+
+@media screen and (max-width: 900px) {
     .header ul {
+        display: none;
+        background-color: rgb(173, 88, 28);
+        border-radius: 10px;
+        width: 50vw;
+    }
+
+    .toggle a {
+        color: beige;
+    }
+
+    .toggle li {
+        padding: 15px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .menu-button {
+        margin: 0 auto;
+        display: flex;
         flex-direction: column;
-        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 100%;
+        padding: 10px;
+        border-radius: 7px;
+        background-color: saddlebrown;
+        color: beige;
+        cursor: pointer;
+    }
+
+    .menu-hamburguesa:checked + .toggle {
+        display: block;
+        position: absolute;
+        right: 0;
     }
 
     .hero {
@@ -431,15 +557,15 @@ h1 {
     }
     
     .titulo {
-        font-size: clamp(6px, 3vw, 12px);
+        font-size: clamp(6px, 3vw, 15px);
     }
 
     .subTitulo {
-        font-size: clamp(6px, 2.5vw, 12px);
+        font-size: clamp(6px, 2.5vw, 15px);
     }
 
     .header a {
-        font-size: clamp(6px, 2vw, 12px);
+        font-size: clamp(10px, 2vw, 15px);
         gap: 5px;
     }
 

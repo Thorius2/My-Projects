@@ -1,128 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NoSeQueComer - Elegí Ahora!</title>
-    <link rel="icon" type="image/x-icon" href="logo4.png">
+    <link rel="icon" type="image/x-icon" href="logo4.png" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <script 
-        src="https://kit.fontawesome.com/3272551e96.js"
-        crossorigin="anonymous"
+    <script
+      src="https://kit.fontawesome.com/3272551e96.js"
+      crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
 
+  <body>
     <header class="header">
-        <div class="contenedorImg">
-            <img src="logo4.png" class="logo" alt="NoSeQueComer_Logo"/>
-        </div>
-        <div class="titulo">
-            <h1>NoSeQueComer</h1>
-            <h2 class="subTitulo">Te ayudamos a elegir!</h2>
-        </div>
-        
-        <nav class="navbar">
-            <ul>
-                <li><a href="" >Recomendaciones</a></li>
-                <li><a href="" >Top Semanal</a></li>
-                <li><a href="" >Subí Tu Receta</a></li>
-            </ul>
-        </nav>
+      <div class="contenedorImg">
+        <img src="logo4.png" class="logo" alt="NoSeQueComer_Logo" />
+      </div>
+      <div class="titulo">
+        <h1>NoSeQueComer</h1>
+        <h2 class="subTitulo">Te ayudamos a elegir!</h2>
+      </div>
+
+      <nav class="navbar">
+        <label for="menu-hamburguesa">
+          <div class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </label>
+        <input type="checkbox" id="menu-hamburguesa" class="menu-hamburguesa" />
+        <ul class="toggle">
+          <li><a href="">Recomendaciones</a></li>
+          <li><a href="">Top Semanal</a></li>
+          <li><a href="">Contactanos</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
-        <!-- Hero Section -->
-        <hero class="hero">
-
-            <div class="nosotros_Texto">
-                <h2>Estás cansad@ de no saber qué comer?</h2>
-                <h2>Tenemos la solución!</h2>
-                <p>Con <span>NoSeQueComer</span>, vas a poder dejar de pensar en qué cocinar. A través de un breve cuestionario, o de manera totalmente al azar, vamos a recomendarte el plato adecuado para tu estado de hambre. Anímate a probar!</p>
-                <div class="botones">
-                    <button class="boton boton1" >COMENZAR YA</button>
-                    <button class="boton boton2">Más Información</button>
-                </div>
-            </div>
-
-            <div class="nosotros_Img">
-                <img src="https://www.sherlockcomms.com/wp-content/uploads/2021/02/6-tasty-Argentinian-dishes-you-can-cook-at-home-img.jpg" alt="Comidas_Argentina" class="comida_Img"/>
-            </div>
-        </hero>
-
-        <!-- Section 1 -->
-        <section class="ventajas">
-            <div class="ventajas_titulos">
-                <h2>Cuáles son las ventajas de usar <span>NoSeQueComer</span>?</h2>
-                <h3>Descubrí algunas de ellas debajo!</h3>
-            </div>
-
-            <div class="contenedor_ventajas">
-                <div class="box_ventaja">
-                    <i class="fa-solid fa-stopwatch"></i>
-                    <h3>Fácil Elección</h3>
-                    <p>Sentís que llegan las 8pm y todavía no sabes qué cocinar? En 5 minutos, podés tener un plato para hacer con los ingredientes que tengas, y lo que más se ajuste a tu paladar.</p>
-                </div>
-                <div class="box_ventaja">
-                    <i class="fa-solid fa-earth-americas"></i>
-                    <h3>Gran Variedad de Platos</h3>
-                    <p>NoSeQueComer no sólo se limita a platos argentinos, sino que también cuenta con una gran variedad de platos internacionales, como la famosa Paella española, o el Ramen japonés.</p>
-                </div>
-                <div class="box_ventaja">
-                    <i class="fa-regular fa-bookmark"></i>
-                    <h3>Guarda tus Elecciones Favoritas</h3>
-                    <p>Hay una receta que te resultó deliciosa? Algún plato que siempre te salva de un apuro? Guardalos aquí, para que los puedas repetir las veces que quieras.</p>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Section 2 -->
-        <section class="opciones">
-            <div class="opciones_titulos">
-                <h2>Qué opciones me brinda NoSeQueComer?</h2>
-                <h3>Es muy fácil de usar, podes elegir entre las siguientes modalidades!</h3>
-            </div>
-
-            <div class="contenedor_opciones">
-                <div class="box_ventaja">
-                    <i class="fa-regular fa-eye-slash"></i>
-                    <h3>Totalmente a Ciegas</h3>
-                    <p>Para cuando no tenés ni un poco de idea de lo que quieres comer. Completarás un cuestionario que te irá llevando a ese plato ideal que solo tu corazón conoce, por ahora.</p>
-                </div>
-                <div class="box_ventaja">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <h3>Conozco el Estilo</h3>
-                    <p>Cuando conoces el estilo de comida deseado (Pasta, Carne, Vegano) podes elegir esta opción, y las opciones se limitarán solamente a lo que hayas elegido y tus ingredientes.</p>
-                </div>
-                <div class="box_ventaja">
-                    <i class="fa-solid fa-vial"></i>
-                    <h3>ReVersionar un Plato Conocido</h3>
-                    <p>ReVersionar? Qué es eso? Muy simple! Es elegir un plato que te guste, y brindarte nuevas variedades o recetas que puedan darle ese giro tan increíble que estás esperando. Animate a cambiar la receta de la abuela!</p>
-                </div>
-                <div class="box_ventaja">
-                    <i class="fa-solid fa-book-skull"></i>
-                    <h3>Modo Rambo</h3>
-                    <p>Tenes de todo en la heladera? Queres pedir comida y no cocinar nada? Animate al Modo Rambo! Con solo apretar un botón, te propondremos un plato completamente aleatorio. CUIDADO! No nos hacemos responsables del resultado.</p>
-                </div>
-            </div>
-
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <div class="redes">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="nosotros_Texto">
+          <h2>Estás cansad@ de no saber qué comer?</h2>
+          <h2>Tenemos la solución!</h2>
+          <p>
+            Con <span>NoSeQueComer</span>, vas a poder dejar de pensar en qué
+            cocinar. A través de un breve cuestionario, o de manera totalmente
+            al azar, vamos a recomendarte el plato adecuado para tu estado de
+            hambre. Anímate a probar!
+          </p>
+          <div class="botones">
+            <button class="boton boton1">COMENZAR YA</button>
+            <button class="boton boton2">Más Información</button>
+          </div>
         </div>
-        <p>Relationships are asking each other what they are going to eat, until one of them dies.</p>
-        <p>©2022 NoSeQueComer. All rights reserved.</p>
 
+        <div class="nosotros_Img">
+          <img
+            src="https://www.sherlockcomms.com/wp-content/uploads/2021/02/6-tasty-Argentinian-dishes-you-can-cook-at-home-img.jpg"
+            alt="Comidas_Argentina"
+            class="comida_Img"
+          />
+        </div>
+      </section>
+
+      <!-- Section Ventajas -->
+      <section class="ventajas">
+        <div class="ventajas_titulos">
+          <h2>Cuáles son las ventajas de usar <span>NoSeQueComer</span>?</h2>
+          <h3>Descubrí algunas de ellas debajo!</h3>
+        </div>
+
+        <div class="contenedor_ventajas">
+          <div class="box_ventaja">
+            <i class="fa-solid fa-stopwatch"></i>
+            <h3>Fácil Elección</h3>
+            <p>
+              Sentís que llegan las 8pm y todavía no sabes qué cocinar? En 5
+              minutos, podés tener un plato para hacer con los ingredientes que
+              tengas, y lo que más se ajuste a tu paladar.
+            </p>
+          </div>
+          <div class="box_ventaja">
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3>Gran Variedad de Platos</h3>
+            <p>
+              NoSeQueComer no sólo se limita a platos argentinos, sino que
+              también cuenta con una gran variedad de platos internacionales,
+              como la famosa Paella española, o el Ramen japonés.
+            </p>
+          </div>
+          <div class="box_ventaja">
+            <i class="fa-regular fa-bookmark"></i>
+            <h3>Guarda tus Favoritos</h3>
+            <p>
+              Hay una receta que te resultó deliciosa? Algún plato que siempre
+              te salva de un apuro? Guardalos aquí, para que los puedas repetir
+              las veces que quieras.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Opciones -->
+      <section class="opciones">
+        <div class="opciones_titulos">
+          <h2>Qué opciones me brinda NoSeQueComer?</h2>
+          <h3>
+            Es muy fácil de usar, podes elegir entre las siguientes modalidades!
+          </h3>
+        </div>
+
+        <div class="contenedor_opciones">
+          <div class="box_ventaja">
+            <i class="fa-regular fa-eye-slash"></i>
+            <h3>Totalmente a Ciegas</h3>
+            <p>
+              Para cuando no tenés ni un poco de idea de lo que quieres comer.
+              Completarás un cuestionario que te irá llevando a ese plato ideal
+              que solo tu corazón conoce, por ahora.
+            </p>
+          </div>
+          <div class="box_ventaja">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>Conozco el Estilo</h3>
+            <p>
+              Cuando conoces el estilo de comida deseado (Pasta, Carne, Vegano)
+              podes elegir esta opción, y las opciones se limitarán solamente a
+              lo que hayas elegido y tus ingredientes.
+            </p>
+          </div>
+          <div class="box_ventaja">
+            <i class="fa-solid fa-vial"></i>
+            <h3>ReVersionar un Plato</h3>
+            <p>
+              ReVersionar? Qué es eso? Muy simple! Es elegir un plato que te
+              guste, y brindarte nuevas variedades o recetas que puedan darle
+              ese giro tan increíble que estás esperando. Animate a cambiar la
+              receta de la abuela!
+            </p>
+          </div>
+          <div class="box_ventaja">
+            <i class="fa-solid fa-book-skull"></i>
+            <h3>Modo Rambo</h3>
+            <p>
+              Tenes de todo en la heladera? Queres pedir comida y no cocinar
+              nada? Animate al Modo Rambo! Con solo apretar un botón, te
+              propondremos un plato completamente aleatorio. CUIDADO! No nos
+              hacemos responsables del resultado.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Section Clientes -->
+    <section class="ventajas">
+      <div class="ventajas_titulos">
+        <h2>Conocé a algunos de nuestros clientes</h2>
+        <h3>Tenemos desde grandes cadenas a pequeños locales adheridos!</h3>
+      </div>
+
+      <div class="contenedor_clientes">
+        <div class="card_clientes">
+          <div class="card_image">
+            <img src="pedimon-text.png" alt="LogoDePedimon" class="card_logo" />
+          </div>
+          <div class="card_text">
+            <h4 class="card_title">PédimonYa</h4>
+            <p class="card_desc">
+              Alguna vez te preguntaste qué comen los Pedimons más famosos? Sus
+              entrenadores también! Por eso utilizan esta página para
+              alimentarlos.
+            </p>
+          </div>
+        </div>
+        <div class="card_clientes">
+          <div class="card_image">
+            <img src="pedimon-text.png" alt="LogoDePedimon" class="card_logo" />
+          </div>
+          <div class="card_text">
+            <h4 class="card_title">PédimonYa</h4>
+            <p class="card_desc">
+              Alguna vez te preguntaste qué comen los Pedimons más famosos? Sus
+              entrenadores también! Por eso utilizan esta página para
+              alimentarlos.
+            </p>
+          </div>
+        </div>
+        <div class="card_clientes">
+          <div class="card_image">
+            <img src="pedimon-text.png" alt="LogoDePedimon" class="card_logo" />
+          </div>
+          <div class="card_text">
+            <h4 class="card_title">PédimonYa</h4>
+            <p class="card_desc">
+              Alguna vez te preguntaste qué comen los Pedimons más famosos? Sus
+              entrenadores también! Por eso utilizan esta página para
+              alimentarlos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contacto -->
+    <section class="opciones">
+      <h2 class="titulo_contacto">Tenes preguntas? Contactanos!</h2>
+      <ul class="datos_contacto">
+        <li>
+          <i class="fa-solid fa-location-dot"></i> Dirección: BondioSandwich
+          1314
+        </li>
+        <li><i class="fa-solid fa-phone"></i> Teléfono: 11-2244-6688</li>
+        <li>
+          <i class="fa-solid fa-envelope"></i> Email:
+          nosequecomer@bondiolita.com
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section Footer -->
+    <footer class="footer">
+      <div class="redes">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p>
+        Las relaciones son preguntarse mutuamente ¿qué vamos a comer hoy? hasta
+        que uno de los dos muera.
+      </p>
+      <p>©2022 NoSeQueComer. All rights reserved.</p>
     </footer>
-
-</body>
+  </body>
 </html>
